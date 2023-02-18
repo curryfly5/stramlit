@@ -11,7 +11,7 @@ def main():
         marker()
     elif page == "Auto-annotation":
         anno()
-    elif page == "batch-test"
+    elif page == "batch-test":
         batch()
 
 # Create page functions
