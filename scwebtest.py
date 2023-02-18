@@ -14,17 +14,17 @@ def marker():
     gene_symbol = st.text_input("")
     if st.button("Submit"):
         #Connect to MySQL
-        cursor = conn.cursor()
+        # cursor = conn.cursor()
         #Query the database
-        query = "SELECT * FROM genes WHERE gene_symbol = %s"
-        cursor.execute(query, (gene_symbol,))
+        # query = "SELECT * FROM genes WHERE gene_symbol = %s"
+        # cursor.execute(query, (gene_symbol,))
         #Fetch the result
-        result = cursor.fetchone()
-        if result:
+        # result = cursor.fetchone()
+        #if result:
             #Display the result
-            st.write(pd.DataFrame(list(result),columns=["Gene Symbol","Expression Level","Cell Type","Cluster"]))
-        else:
-            st.write("This gene symbol does not exist in the database.")
+            #st.write(pd.DataFrame(list(result),columns=["Gene Symbol","Expression Level","Cell Type","Cluster"]))
+        #else:
+            #st.write("This gene symbol does not exist in the database.")
 
 def batch():
     st.title("Batch Effects")
