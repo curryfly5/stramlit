@@ -2,28 +2,34 @@ import streamlit as st
 
 # Create main function
 def main():
-    st.sidebar.header("Navigation")
-    page = st.sidebar.selectbox("Choose a page", 
-                                ["Home", "About", "Contact"])
+    st.sidebar.header("Meau")
+    page = st.sidebar.selectbox("Choose a page from here ⬇️", 
+                                ["Home", "Marker", "Auto-annotation","batch-test"])
     if page == "Home":
         home()
-    elif page == "About":
-        about()
-    elif page == "Contact":
-        contact()
+    elif page == "Marker":
+        marker()
+    elif page == "Auto-annotation":
+        anno()
+    elif page == "batch-test"
+        batch()
 
 # Create page functions
 def home():
     st.title("Homepage")
     st.write("This is the content of the Homepage")
 
-def about():
-    st.title("About")
-    st.write("This is the content of the About page")
+def marker():
+    st.title("Marker genes")
+    st.write("you can search marker gene of specific celltype on this page")
 
-def contact():
-    st.title("Contact")
-    st.write("This is the content of the Contact page")
+def anno():
+    st.title("Auto annotation")
+    st.write("Provide your matrix or h5ad, we can help to annotate")
+   
+def batch():
+    st.title("Batch test")
+    st.write("Recommend a best method to correct your batch effect")
 
 # Run main function
 if __name__ == "__main__":
