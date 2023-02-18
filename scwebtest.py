@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from connection import conn
+# from connection import conn
 
 #Create a function for each page of your website
 def home():
