@@ -12,7 +12,7 @@ def marker():
     st.write("Please enter a gene symbol (e.g. MAPK1) to search for its expression in the database:")
     #Add an input box
     gene_symbol = st.text_input("")
-    if st.button("Submit"):
+    st.button("Submit"):
         #Connect to MySQL
         # cursor = conn.cursor()
         #Query the database
